@@ -23,7 +23,7 @@ export default function ResetPassword({ token, email }) {
 
     return (
         <GuestLayout>
-            <Head title="Reset Password" />
+            <Head title="パスワードリセット" />
 
             <form onSubmit={submit}>
                 <div>
@@ -43,7 +43,7 @@ export default function ResetPassword({ token, email }) {
                 </div>
 
                 <div className="mt-4">
-                    <InputLabel htmlFor="password" value="Password" />
+                    <InputLabel htmlFor="password" value="パスワード" />
 
                     <TextInput
                         id="password"
@@ -62,7 +62,7 @@ export default function ResetPassword({ token, email }) {
                 <div className="mt-4">
                     <InputLabel
                         htmlFor="password_confirmation"
-                        value="Confirm Password"
+                        value="パスワード（確認用）"
                     />
 
                     <TextInput

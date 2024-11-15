@@ -17,12 +17,11 @@ export default function ForgotPassword({ status }) {
 
     return (
         <GuestLayout>
-            <Head title="Forgot Password" />
+            <Head title="パスワードを忘れてしまった場合" />
 
             <div className="mb-4 text-sm text-gray-600">
-                Forgot your password? No problem. Just let us know your email
-                address and we will email you a password reset link that will
-                allow you to choose a new one.
+                以下のフォームにご登録のメールアドレスをご入力ください。<br />
+                パスワードリセット用のリンクを送信いたします。
             </div>
 
             {status && (
@@ -46,7 +45,7 @@ export default function ForgotPassword({ status }) {
 
                 <div className="mt-4 flex items-center justify-end">
                     <PrimaryButton className="ms-4" disabled={processing}>
-                        Email Password Reset Link
+                        パスワードリセット用のリンクを送信
                     </PrimaryButton>
                 </div>
             </form>
